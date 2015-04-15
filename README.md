@@ -35,7 +35,14 @@ Le principe de l'algorithme consiste à associer à un mot une signature. Cette 
 
 #### Map après traitement de l'algorithme :
 
-| Signature | Mots               |
-|:---------:|--------------------|
-| LOOP      | [LOOP, POOL, POLO] |
-| OPST      | [STOP, POST]       |
+| Signature | Mots                 |
+|:---------:|----------------------|
+| LOOP      | [ LOOP, POOL, POLO ] |
+| OPST      | [ STOP, POST ]       |
+
+#### Algorithme en pseudo-code :
+
+```
+Pour chaque mot du dictionnaire:
+    
+```
