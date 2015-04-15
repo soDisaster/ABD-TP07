@@ -21,7 +21,17 @@ Objectifs
 Algorithme
 ----------
 
-Le principe de l'algorithme consiste à associer à un mot une signature. Cette signature se compose des lettres du mot, triées dans l'ordre alphabétique. Ainsi, deux anagrammes auront la même signature. En utilisant cette signature comme clé d'une map, on lui associe comme valeur la liste des mots à l'origine de cette signature.
+Le principe de l'algorithme consiste à associer à un mot une __signature__. Cette signature se compose des lettres du mot, triées dans l'ordre alphabétique. Ainsi, __deux anagrammes auront la même signature__. En utilisant cette signature comme clé d'une __map__, on lui associe comme valeur la liste des mots à l'origine de cette signature.
+
+#### Algorithme en pseudo-code :
+
+```
+Map<String, List<String>> map
+
+Pour chaque mot du dictionnaire:
+    signature = lettres du mot triées dans l'ordre alphabétique
+    map[signature].append(mot)
+```
 
 #### Exemple :
 
@@ -40,12 +50,6 @@ Le principe de l'algorithme consiste à associer à un mot une signature. Cette 
 | LOOP      | [ LOOP, POOL, POLO ] |
 | OPST      | [ STOP, POST ]       |
 
-#### Algorithme en pseudo-code :
+#### Recherche d'anagrammes :
 
-```
-Map<String, List<String>> map
-
-Pour chaque mot du dictionnaire:
-    signature = lettres du mot triées dans l'ordre alphabétique
-    map[signature].append(mot)
-```
+Une fois la map remplie avec les mots du dictionnaire, il est possible de rechercher les anagrammes d'un mot donné. `map[mot.sort()]` retourne en effet la liste des anagrammes du `mot` passé en paramètre.
