@@ -30,5 +30,12 @@ Le principe de l'algorithme consiste à associer à un mot une signature. Cette 
 | LOOP | LOOP      |
 | POOL | LOOP      |
 | POLO | LOOP      |
-| STOP | POST      |
-| POST | POST      |
+| STOP | OPST      |
+| POST | OPST      |
+
+#### Map après traitement de l'algorithme :
+
+| Signature | Mots               |
+|:---------:|:------------------:|
+| LOOP      | [LOOP, POOL, POLO] |
+| OPST      | [STOP, POST]       |
