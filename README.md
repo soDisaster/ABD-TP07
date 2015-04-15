@@ -22,3 +22,13 @@ Algorithme
 ----------
 
 Le principe de l'algorithme consiste à associer à un mot une signature. Cette signature se compose des lettres du mot, triées dans l'ordre alphabétique. Ainsi, deux anagrammes auront la même signature. En utilisant cette signature comme clé d'une map, on lui associe comme valeur la liste des mots à l'origine de cette signature.
+
+#### Exemple :
+
+| Mot  | Signature |
+|:----:|:---------:|
+| LOOP | LOOP      |
+| POOL | LOOP      |
+| POLO | LOOP      |
+| STOP | POST      |
+| POST | POST      |
