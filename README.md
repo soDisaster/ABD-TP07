@@ -18,14 +18,7 @@ Objectifs
 - On veut tous les mots en résultats, même ceux qui n'ont pas d'anagramme.
 - On ne conserve que les mots du dictionnaire qui ont un autre mot comme anagramme.
 
-```
-Pour chaque mot1 dans dico.txt
-    On crée un tableau de la longueur du mot1
-    Chaque cellule contient une lettre du mot1
-    
-    Pour chaque mot2 dans dico.txt de la même longueur que mot1
-        On crée un tableau temporaire qui contient chaque lettre de mot2
-        On compare les deux tableaux.
-        Si mot1 et mot2 possèdent les mêmes lettres dans un ordre différent
-            Afficher mot2 est anagramme de mot1
-```
+Algorithme
+----------
+
+Le principe de l'algorithme consiste à associer à un mot une signature. Cette signature se compose des lettres du mot, triées dans l'ordre alphabétique. Ainsi, deux anagrammes auront la même signature. En utilisant cette signature comme clé d'une map, on lui associe comme valeur la liste des mots à l'origine de cette signature.
