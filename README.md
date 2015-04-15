@@ -33,7 +33,14 @@ Pour chaque mot du dictionnaire:
     map[signature].append(mot)
 ```
 
-#### Exemple :
+#### Recherche d'anagrammes :
+
+Une fois la map remplie avec les mots du dictionnaire, il est possible de rechercher les anagrammes d'un mot donné. `map[mot.sort()]` retourne en effet la liste des anagrammes du `mot` passé en paramètre.
+
+Exemple
+-------
+
+#### Exemples de signatures :
 
 | Mot  | Signature |
 |:----:|:---------:|
@@ -49,7 +56,3 @@ Pour chaque mot du dictionnaire:
 |:---------:|----------------------|
 | LOOP      | [ LOOP, POOL, POLO ] |
 | OPST      | [ STOP, POST ]       |
-
-#### Recherche d'anagrammes :
-
-Une fois la map remplie avec les mots du dictionnaire, il est possible de rechercher les anagrammes d'un mot donné. `map[mot.sort()]` retourne en effet la liste des anagrammes du `mot` passé en paramètre.
