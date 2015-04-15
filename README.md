@@ -43,6 +43,9 @@ Le principe de l'algorithme consiste à associer à un mot une signature. Cette 
 #### Algorithme en pseudo-code :
 
 ```
+Map<String, List<String>> map
+
 Pour chaque mot du dictionnaire:
-    
+    signature = lettres du mot triées dans l'ordre alphabétique
+    map[signature].append(mot)
 ```
